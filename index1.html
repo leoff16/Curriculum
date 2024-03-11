@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">LEONARDO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto.jpg" alt="">
+            </div>
+            <h1>LEONARDO OLIVERA</h1>
+            <h2><br>Application Support Engineer Ssr<br/></h2>
+            <div class="redes">
+                <a href="https://github.com/leoff16" target="_blank"><i class="fa -brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/leonardo-olivera-7049a990" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/leolivera16?igsh=bjI0ZzA4bHg3bG5o" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, mi nombre es Leonardo.</span> 
+                Durante los últimos años, he tenido la valiosa oportunidad de trabajar en el campo del soporte técnico, programación y telecomunicaciones, donde he adquirido una gran cantidad de conocimientos y experiencia práctica.
+                Durante mi carrera, he aprendido a adaptarme rápidamente a entornos cambiantes y a enfrentar desafíos técnicos de manera efectiva. Tengo habilidades sólidas en la resolución de problemas, capacidad para trabajar bajo presión y una actitud proactiva para aprender nuevas tecnologías y mantenerme actualizado en un campo tan dinámico como el de la tecnología.
+                Mi experiencia me ha brindado una base sólida de conocimientos y habilidades, y estoy emocionado de seguir creciendo y aportando mis capacidades a nuevos proyectos y desafíos en el futuro. </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            16 de Julio de 1989
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            092377761
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            leoff_16@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Orosman de los Santos N°228
+                        </li>
+                        <li>
+                            <strong>Empresa</strong>
+                            Prometeo Openbanking
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Application Support Engineer Ssr</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-brands fa-playstation"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                            <span>DEV</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>FUTBOL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-beer" aria-hidden="true"></i>
+                            <span>CERVEZA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Mysql</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Zabbix</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnologo en Telecomunicaciones</h4>
+                        <span class="casa">Universidad de la Republica</span>
+                        <span class="fecha">2021 - Cursando</span>
+                        <ul>
+                            <b><u>Conocimientos en:</u></b>
+                            <li>Virtualización con vmware, virtual box y proxmox.</li>
+                            <li>Creación y gestión de servidores virtuales.</li>
+                            <li>Configuración de switches y routers, armado de redes y cableado estructurado.</li>
+                            <li>Programación con Python, java, C y gestión de base de datos mysql, mariadb.</li>    
+                            <li>Detección de fallas y reparación de PC.</li>    
+                            <li>Respaldos con veeam y backuppc.</li>            
+                            <li>Instalaciones de SO y programas varios.</li>
+                            <li>Monitoreo de servicios con zabbix.</li>
+                        </ul>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico en Reparación PC y Redes Informáticas</h4>
+                        <span class="casa">Circulo Informático</span>
+                        <span class="fecha">2008 - 2009</span>
+                        <ul>
+                            <b><u>Conocimientos en:</u></b>
+                            <li>Ensamble desde cero de una máquina.</li>
+                            <li>Detección de diversas fallas.</li>
+                            <li>Instalación de software, hardware y SO.</li>
+                            <li>Armado de una red local.</li>    
+                            <li>Configuración de routers y switches.</li>    
+                        </ul>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4><u>Certificados / Cursos</u></h4>                        
+                        <ul>
+                            <li><a href="https://drive.google.com/file/d/1ecn4IiJHCkVozssWWavOqjtRIrUo6WAa/view">Soporte Tecnico a Computadoras en entornos Corporativos</a></li>
+                            <li><a href="https://drive.google.com/file/d/1f1kkhv9iz5I10kRuQwRR92JI_OH8y2Ms/view">NDG Linux Unhatched</a></li>
+                            <li><a href="https://drive.google.com/file/d/1EOoA4pCN4Vt1vqJg4j0us-_FQAoY0RUE/view">Desarrollador Python</a></li>
+                            <li><a href="https://drive.google.com/file/d/1HHQ2A5veJDVH_t3G5CCb6j4bUYXzuuWE/view">Consumir APIs con Python</a></li>
+                            <li><a href="https://drive.google.com/file/d/12G9mk8qPyEmg2CSb4MTa1pddOJ6ziI12/view">Web Scraper con Python</a></li>
+                            <li><a href="https://drive.google.com/file/d/1Bl5tbHT6iTsNDdGDhq1FE-nblLsNLkk_/view">Certificación en SQL</a></li>
+                            <li><a href="https://drive.google.com/file/d/1PNXpc_MnLi7YTYWkQocMMkawJf8iJzGE/view">Curso profesional de Python</a></li>
+                        </ul>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/leoff16" target="_blank"><i class="fa -brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/leonardo-olivera-7049a990" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/leolivera16?igsh=bjI0ZzA4bHg3bG5o" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!--script src="script.js"></script-->
+</body>
+</html>
